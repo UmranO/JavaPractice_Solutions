@@ -3,7 +3,7 @@ public class EqualNumbers {
     public static void main(String[] args) {
         int n1=1;
         int n2=5;
-        int n3=9;
+        int n3=5;
 
         String result="";
         if(n1 == n2 && n2 == n3){result = "All equal";}
