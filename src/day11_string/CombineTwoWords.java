@@ -20,5 +20,4 @@ public class CombineTwoWords {
                    Input:                 Output:
                     one                   oneight
                     eight
-
  */
