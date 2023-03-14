@@ -28,7 +28,8 @@ public class MyInfo {
         System.out.println("Enter your street name");
         String streetN=input.next();
         System.out.println(fullName+"\n"+age+"\n"+gender+"\n"+phoneN+"\nadress:\n\t\t"+buildingN+" "+streetN+"\n\t\t"+city+", "+state+" "+zip+"\n"+schoolName);
-    }
+        input.close();
+   }
 }
 /*
 11. Create a class called MyInfo. Write a program that can ask the user to:

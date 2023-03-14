@@ -21,7 +21,7 @@ public class CentsToDollars {
 
         System.out.println(dollar+" dollars and "+cents+" cents");
 
-
+        input.close();
     }
 }
 /*
