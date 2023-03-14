@@ -9,6 +9,7 @@ public class SalaryCalculator {
                           "\nYour gross income is $"+salary );
     }
 
+//----Test----------------------------------------------------------------------------------------------------
     public static void main(String[] args) {
         calculateSalary(12.0,3);
     }
