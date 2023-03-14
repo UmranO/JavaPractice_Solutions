@@ -1,7 +1,49 @@
 package day09_scanner;
 
+import java.util.Scanner;
+
 public class StockMarket {
     public static void main(String[] args) {
+//----UO Way-----------------------------------------------------------------------------------------------------
+
+    Scanner input=new Scanner(System.in);
+        System.out.println("How many total shares do you have already?");
+        int total=input.nextInt();
+
+        if (total==0 || total<0) return;
+        System.out.println("how much is your total value in the stock market?");
+
+        double value=input.nextDouble();
+        input.nextLine();
+
+        System.out.println("Enter the name of the company they have the most shares in?");
+        String cName=input.nextLine();
+
+        System.out.println("Your total stock market holding is "+value+" which is made up of "+total+
+                " shares. "+cName+ " is your company holdings");
+//----M Way-----------------------------------------------------------------------------------------------------
+
+        System.out.println("How many total shares do you have?");
+        int shares = input.nextInt();
+
+        String result = "Invalid Number of shares";
+
+        if (shares > 0) {
+            System.out.println("How much is your total value in the stock market?");
+            double totalValue = input.nextDouble();
+
+            input.nextLine(); //before we use the next nextLine() method we need to capture the "Enter" that's left by the nextDouble
+
+            System.out.println("Enter the name of the company that you have the most shares in");
+            String companyName = input.nextLine();
+
+            result = "Your total stock market holding is $" + totalValue + " which is made up of " + shares + ". "
+                    + companyName + " is your company holdings.";
+
+        }
+        System.out.println(result);
+
+        input.close();
 
     }
 }
