@@ -8,48 +8,48 @@ public class InsuranceQuote_UO {
         System.out.println("Enter your gender");
         char gender=input.next().charAt(0);
         while (!(gender=='F'|| gender=='M')){
-                System.err.println("Invalid gender, Re-enter your gender");
-                gender=input.next().charAt(0);}
-            System.out.println("Are you married(Yes/No)");
-            String isMarried=input.next();
-            while(!(isMarried.equals("Yes")||isMarried.equals("No"))){
-                System.err.println("Invalid answer. Are you married? (Yes/No) ");
-                isMarried=input.next();}
-            System.out.println("Enter your age");
-            int age =input.nextInt();
-            while (!(age>0 &&age<=120)) {System.err.println("Invalid age. Re-enter your age.");
-             age =input.nextInt();}
-            System.out.println("Enter how many miles you drive in a day");
-            int milage=input.nextInt();
-            while (milage<5) {System.err.println("Invalid milage. Renter how many miles he/she drives in a day");
+            System.err.println("Invalid gender, Re-enter your gender");
+            gender=input.next().charAt(0);}
+        System.out.println("Are you married(Yes/No)");
+        String isMarried=input.next();
+        while(!(isMarried.equals("Yes")||isMarried.equals("No"))){
+            System.err.println("Invalid answer. Are you married? (Yes/No) ");
+            isMarried=input.next();}
+        System.out.println("Enter your age");
+        int age =input.nextInt();
+        while (!(age>0 &&age<=120)) {System.err.println("Invalid age. Re-enter your age.");
+            age =input.nextInt();}
+        System.out.println("Enter how many miles you drive in a day");
+        int milage=input.nextInt();
+        while (milage<5) {System.err.println("Invalid milage. Renter how many miles he/she drives in a day");
             milage=input.nextInt();}
-            System.out.println("Do you want full coverage or liability insurance? FullCov/Liability");
-            String type=input.next();
-            while( !(type.equals("FullCov")||type.equals("Liability"))){
+        System.out.println("Do you want full coverage or liability insurance? FullCov/Liability");
+        String type=input.next();
+        while( !(type.equals("FullCov")||type.equals("Liability"))){
             System.err.println("Invalid Entry, please re-enter! full coverage or liability?");
             type = input.nextLine().toLowerCase();
         }
-            System.out.println("Did you have any accidents or claims in past 5 years (Yes/No)");
-            String accident=input.next();
-            while(!(accident.equals("Yes")||accident.equals("No"))) {System.err.println("Invalid Entry Reenter if you have acc. or claims");
+        System.out.println("Did you have any accidents or claims in past 5 years (Yes/No)");
+        String accident=input.next();
+        while(!(accident.equals("Yes")||accident.equals("No"))) {System.err.println("Invalid Entry Reenter if you have acc. or claims");
             accident=input.next();}
-            System.out.println("Does you car have an anti-theft device (Yes/No)");
-            String anti=input.next();
-            while (!(anti.equals("Yes")||anti.equals("No"))) {System.err.println("Invalid Entry Reenter if you have acc. or claims");
+        System.out.println("Does you car have an anti-theft device (Yes/No)");
+        String anti=input.next();
+        while (!(anti.equals("Yes")||anti.equals("No"))) {System.err.println("Invalid Entry Reenter if you have acc. or claims");
             anti=input.next();}
-            int price=0;
-            if (type.equals("Liability")){
+        int price=0;
+        if (type.equals("Liability")){
             if (age<25) price=90; else price=50;
             if (milage<=10)price+=10;
             else if (milage> 10 && milage <= 50) price+=10;
             else price+=50;}
-            else{
-                if (age<25) price=160; else price=120;
-                if (milage<=10)price+=20;
-                else if (milage> 10 && milage <= 50) price+=40;
-                else price+=70;}
+        else{
+            if (age<25) price=160; else price=120;
+            if (milage<=10)price+=20;
+            else if (milage> 10 && milage <= 50) price+=40;
+            else price+=70;}
 
-            if (anti.equals("Yes")){price-=.05*price;}
+        if (anti.equals("Yes")){price-=.05*price;}
         if (accident.equals("Yes")){price+=.15*price;}
         if (accident.equals("No")){price-=.10*price;}
         if (isMarried.equals("Yes")){price-=.05*price;}
@@ -67,7 +67,7 @@ public class InsuranceQuote_UO {
     }
 
 
-        }
+}
 
 
 /*
