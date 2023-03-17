@@ -4,7 +4,7 @@ public class RoomReservation2_UO {
     public static void main(String[] args){
 
         Scanner input=new Scanner(System.in);
-        int total=0;
+        int total=0;                                                               //Butun odalarin toplami icin guzel!
         while(true){
             System.out.println("Which bedroom do you want to reserve? \n " +
                     "\t\tKing    == $120\n" +
@@ -24,7 +24,7 @@ public class RoomReservation2_UO {
 
             int price=room.equals("king")? 120 :room.equals("queen")? 100 : 80;
             int totalPriceForARoom=price*nights;
-            total+=totalPriceForARoom;
+            total+=totalPriceForARoom;                                          //yeni odalari ekliyor
             System.out.println("Your room type is : "+ room+"\nTotal price for the room is: "+totalPriceForARoom);
 
             System.out.println("Would you like to reserve another room? yes/no");
