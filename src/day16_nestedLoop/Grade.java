@@ -1,5 +1,4 @@
 package day16_nestedLoop;
-import java.util.Locale;
 import java.util.Scanner;
 public class Grade {
     public static void main (String[] args){
@@ -26,7 +25,7 @@ public class Grade {
                 break;
             }
         }
-
+       input.close();
     }
 }
 /*
