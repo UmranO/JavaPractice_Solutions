@@ -7,7 +7,6 @@ public class MultiplicationTable {
                 System.out.print(j*i+"\t" );
             }
             System.out.println();
-
         }
     }
 }
