@@ -18,7 +18,7 @@ public class SalaryCalculator_UO {
     public double stateTax(){
         return salary()*stateTaxRate;                                   //salary method'u veri olarak kullaniyoruz
     }
-    public double federalTax(){
+    public double federalTax(){                                      //UOS-instance'lari kullandigi icin parameteresiz
         return salary()*federalTaxRate;
     }
     public double salaryAfterTax(){
